@@ -17,18 +17,6 @@ class NavBar : AppCompatActivity() {
         setContentView(R.layout.activity_nav_bar)
 
 
-
-
-        nav_home.setOnClickListener {
-            startActivity(Intent(this, InicioActivity::class.java))
-        }
-
-        nav_inquilinos.setOnClickListener {
-            startActivity(Intent(this, InicioActivity::class.java))
-        }
-
-        nav_inmuebles.setOnClickListener {
-            startActivity(Intent(this, InicioActivity::class.java))
-        }
     }
+
 }
