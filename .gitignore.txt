@@ -1,0 +1,52 @@
+# Android
+/.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/tasks.xml
+/.idea/gradle.xml
+/.idea/libraries
+/.idea/caches
+/.idea/modules.xml
+/.idea/misc.xml
+/.idea/navEditor.xml
+/.idea/vcs.xml
+*.iml
+.gradle/
+build/
+
+# Gradle files
+.gradle
+.gradle/
+
+# IntelliJ IDEA files
+.idea/
+
+# User-specific files
+.gradle/
+build/
+/captures/
+/local.properties
+/.idea/workspace.xml
+/.idea/tasks.xml
+/.idea/gradle.xml
+/.idea/libraries
+/.idea/caches
+/.idea/modules.xml
+/.idea/misc.xml
+/.idea/navEditor.xml
+/.idea/vcs.xml
+
+# Windows thumbnail db
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
