@@ -1,12 +1,22 @@
 package pe.cibertec.dam.arrendamientosapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import pe.cibertec.dam.arrendamientosapp.R.id.nav_home
+
+class NavBar : AppCompatActivity() {
 
 
- class InicioActivity : AppCompatActivity(){
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nav_bar)
+
+
     }
+
 }
