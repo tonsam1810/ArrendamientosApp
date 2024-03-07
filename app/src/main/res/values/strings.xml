@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ArrendamientosApp</string>
+    <string name="lbl_title_listado_contratos">Listado de Contratos</string>
+    <string name="lbl_buscar">Buscar</string>
+    <string name="lbl_estado">Estado</string>
+    <string name="button_buscar">Buscar</string>
+    <string name="numero_depa">N°</string>
+
+
 </resources>
