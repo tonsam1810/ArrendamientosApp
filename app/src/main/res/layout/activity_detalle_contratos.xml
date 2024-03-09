@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleContratosActivity">
+
+    <LinearLayout
+        android:id="@+id/lyArriba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <TextView
+            android:id="@+id/dtTituloContrato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dtNumeroContrato"
+            android:layout_weight="0.5"
+            />
+
+        <TextView
+            android:id="@+id/editTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="end"
+            android:hint="@string/dtNumeroContrato" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyArriba2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyArriba"
+        >
+        <TextView
+            android:id="@+id/dtFechaInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dtFechaInicio"
+            android:layout_weight="0.5"
+            />
+
+        <TextView
+            android:id="@+id/dtFechafin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dtFechaFinal"
+            android:layout_weight="0.5"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyArriba3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyArriba2"
+        >
+        <TextView
+            android:id="@+id/dtInmbueble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dtInmueble"
+            android:layout_weight="0.5"
+            />
+
+        <TextView
+            android:id="@+id/dtEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dtEstado"
+            android:layout_weight="0.5"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyArriba4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyArriba3">
+
+        <TextView
+            android:id="@+id/dtNombreInquilinoLegend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dtInquilino"
+            android:layout_marginEnd="10sp"
+            android:gravity="end"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:id="@+id/dtNombreInquilino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dtInquilino"
+            android:layout_weight="0.5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyArriba5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyArriba4">
+
+        <TextView
+            android:id="@+id/DtMontoMensualLegend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dtMontoMensual"
+            android:layout_marginEnd="10sp"
+            android:gravity="end"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:id="@+id/DtMontoMensual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dtMontoMensual"
+            android:layout_weight="0.5" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dtclausula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dtClausula"
+        app:layout_constraintTop_toBottomOf="@+id/lyArriba5"
+        android:layout_marginTop="10sp"
+        />
+
+    <Button
+        android:id="@+id/btnAddCarro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/dtclausula"
+        android:backgroundTint="@color/naranja"
+        android:text="@string/btn_cerrar"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

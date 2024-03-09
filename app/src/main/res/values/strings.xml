@@ -1,10 +1,22 @@
 <resources>
     <string name="app_name">ArrendamientosApp</string>
+
+    //contratos
     <string name="lbl_title_listado_contratos">Listado de Contratos</string>
     <string name="lbl_buscar">Buscar</string>
     <string name="lbl_estado">Estado</string>
     <string name="button_buscar">Buscar</string>
     <string name="numero_depa">N°</string>
 
+    <string name="dtNumeroContrato">Detalle de contrato</string>
+    <string name="dtFechaInicio">Fecha inicio</string>
+    <string name="dtFechaFinal">Fecha fin</string>
+    <string name="dtInmueble">Inmueble</string>
+    <string name="dtEstado">Estado</string>
+    <string name="dtInquilino">Inquilino</string>
+    <string name="dtMontoMensual">Monto Mensual</string>
+    <string name="dtClausula">Clausulas de contrato</string>
+
+    <string name="btn_cerrar">Cerrar</string>
 
 </resources>
