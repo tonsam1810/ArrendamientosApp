@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ArrendamientosApp</string>
+    <string name="lblTituloListadoInquilinos">Listado de Inquilinos</string>
+    <string name="lblIdInquilino">ID</string>
+    <string name="lblDniInquilino">DNI</string>
+    <string name="lblNombres">Nombre Completo</string>
+    <string name="lblEstadoInquilino">Estado</string>
 </resources>
