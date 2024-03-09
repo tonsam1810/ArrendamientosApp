@@ -7,4 +7,294 @@
     android:layout_height="match_parent"
     tools:context=".Inquilinos.DetailInquilinoActivity">
 
+    <TextView
+        android:id="@+id/lblTituloDetalleInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:gravity="center"
+        android:text="@string/TituloDetalleInquilino"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/lyIdInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblTituloDetalleInquilino">
+
+        <TextView
+            android:id="@+id/lblIdDetInquilino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_weight="0.5"
+            android:gravity="end"
+            android:text="@string/IdInquilino" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtIdDetInquilino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:enabled="false"
+            android:hint="@string/IdInquilino" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyNombresDetInq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyIdInquilino">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_weight="0.5"
+            android:gravity="end"
+            android:id="@+id/lblNombresDetInquilino"
+            android:text="@string/SoloNombres" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNombresDetInquilino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:hint="@string/SoloNombres" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyApellidoPatDetInq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyNombresDetInq">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_weight="0.5"
+            android:gravity="end"
+            android:id="@+id/lblApellidoPatDetInq"
+            android:text="@string/ApellidoPat" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtApellidoPaternoDetInquilino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:hint="@string/ApellidoPat" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyApellidoMatDetInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyApellidoPatDetInq">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_weight="0.5"
+            android:gravity="end"
+            android:id="@+id/lblApellidoMatDetInquilino"
+            android:text="@string/ApellidoMat" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtApellidoMaternoDetInquilino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:hint="@string/ApellidoMat"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyDniDetInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyApellidoMatDetInquilino">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_weight="0.5"
+            android:gravity="end"
+            android:id="@+id/lblDniDetInquilino"
+            android:text="@string/DniInquilino" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtDniDetInquilino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:hint="@string/DniInquilino"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyTelefonoDetInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyDniDetInquilino">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_weight="0.5"
+            android:gravity="end"
+            android:id="@+id/lblTelefonoDetInquilino"
+            android:text="@string/TelefonoInquilino" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtTelefonoDetInquilino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:hint="@string/TelefonoInquilino"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyFechaNacDetInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyTelefonoDetInquilino">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_weight="0.5"
+            android:gravity="end"
+            android:id="@+id/lblFechaNacDetInquilino"
+            android:text="@string/FechaNacInquilino" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtFechaNacDetInquilino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:hint="@string/FechaNacInquilino"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyEstadoDetInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyFechaNacDetInquilino">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_weight="0.5"
+            android:gravity="end"
+            android:id="@+id/lblEstadoDetInquilino"
+            android:text="@string/EstadoInquilino" />
+
+        <Spinner
+            android:id="@+id/spnEstadoDetInquilino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyBotonesDetInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyEstadoDetInquilino">
+
+        <Button
+            android:id="@+id/btnGuardarDetInquilino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/confirm"
+            android:text="@string/Guardar" />
+
+
+        <Button
+            android:id="@+id/btnCancelarGuardarDetInquilino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/cancel"
+            android:text="@string/Cancelar" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnBorrarDetInquilino"
+        android:layout_margin="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_input_delete"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnEditarDetInquilino"
+        android:layout_margin="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/btnBorrarDetInquilino"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

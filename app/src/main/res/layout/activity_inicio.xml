@@ -6,16 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".InicioActivity">
     <!-- Contenedor para el contenido específico de cada activity -->
+
     <TextView
+        android:id="@+id/lblTituloPrincipal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:text="@string/TituloInicio"
         android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/app_nav_bar" />
 
-        android:text="Incio de aplicacion"
-        />
+    <include
+        android:id="@+id/app_nav_bar"
+        layout="@layout/activity_nav_bar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
-    <include layout="@layout/activity_nav_bar" />
-
+    <Button
+        android:id="@+id/btnInquilinos"
+        android:layout_width="190dp"
+        android:layout_height="90dp"
+        android:text="@string/Inquilinos"
+        app:layout_constraintBottom_toBottomOf="@+id/app_nav_bar"
+        app:layout_constraintEnd_toEndOf="@+id/app_nav_bar"
+        app:layout_constraintStart_toStartOf="@+id/app_nav_bar"
+        app:layout_constraintTop_toTopOf="@+id/app_nav_bar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,21 @@
 <resources>
     <string name="app_name">ArrendamientosApp</string>
-    <string name="lblTituloListadoInquilinos">Listado de Inquilinos</string>
-    <string name="lblIdInquilino">ID</string>
-    <string name="lblDniInquilino">DNI</string>
-    <string name="lblNombres">Nombre Completo</string>
-    <string name="lblEstadoInquilino">Estado</string>
+    <string name="TituloListadoInquilinos">Listado de Inquilinos</string>
+    <string name="IdInquilino">ID</string>
+    <string name="DniInquilino">DNI</string>
+    <string name="Nombres">Nombre Completo</string>
+    <string name="SoloNombres">Nombres</string>
+    <string name="ApellidoPat">Apellido Paterno</string>
+    <string name="ApellidoMat">Apellido Materno</string>
+    <string name="EstadoInquilino">Estado</string>
+    <string name="TelefonoInquilino">Teléfono</string>
+    <string name="FechaNacInquilino">Fecha Nacimiento</string>
+
+    <string name="TituloInicio">Bienvenidos</string>
+    <string name="Inquilinos">Inquilinos</string>
+    <string name="Usuarios">Catalogo de usuarios</string>
+    <string name="TituloAgregarInquilino">Agregar Inquilino</string>
+    <string name="TituloDetalleInquilino">Detalle de Inquilino</string>
+    <string name="Guardar">Guardar</string>
+    <string name="Cancelar">Cancelar</string>
 </resources>
