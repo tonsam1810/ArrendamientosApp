@@ -16,6 +16,15 @@
         android:theme="@style/Theme.ArrendamientosApp"
         tools:targetApi="31">
         <activity
+            android:name=".Inquilinos.DetailInquilinoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Inquilinos.AddInquilinoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".util.LoadingDialog"
+            android:exported="false" />
+        <activity
             android:name=".Inquilinos.InquilinoActivity"
             android:exported="false" />
         <activity
