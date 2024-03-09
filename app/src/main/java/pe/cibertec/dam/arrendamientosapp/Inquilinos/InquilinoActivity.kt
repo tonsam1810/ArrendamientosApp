@@ -4,8 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -44,11 +42,6 @@ class InquilinoActivity : AppCompatActivity() {
         //Aca cargo los datos desde el servicio del api hacia mi recyclerview
         cargaData()
 
-       /*ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }*/
     }
 
     fun setupComponents() {
@@ -77,7 +70,7 @@ class InquilinoActivity : AppCompatActivity() {
                                 this@InquilinoActivity,
                                 DetailInquilinoActivity::class.java
                             ).apply {
-                                putExtra("MaxInqId", it.id_inquilino)
+                                putExtra("MaxInqId", inqId)
                             }
                         startActivity(intent)
                     }

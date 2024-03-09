@@ -15,11 +15,11 @@ class InicioActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
-        /*inqButton = findViewById(R.id.btnInquilinos)
+        inqButton = findViewById(R.id.btnInquilinos)
 
         inqButton.setOnClickListener {
             listarInquilinos()
-        }*/
+        }
     }
 
      override fun onCreateOptionsMenu(menu: Menu): Boolean {
