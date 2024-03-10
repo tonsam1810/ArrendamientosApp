@@ -7,6 +7,7 @@
     <string name="lbl_estado">Estado</string>
     <string name="button_buscar">Buscar</string>
     <string name="numero_depa">N°</string>
+    <string name="numero_contrato">Numero de contrato</string>
 
     <string name="dtNumeroContrato">Detalle de contrato</string>
     <string name="dtFechaInicio">Fecha inicio</string>
@@ -18,5 +19,19 @@
     <string name="dtClausula">Clausulas de contrato</string>
 
     <string name="btn_cerrar">Cerrar</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="btn_cancelar">Cancelar</string>
+
+    <string name="geDNI">DNI</string>
+    <string name="geNombres">Nombres</string>
+    <string name="geApellidos">Apellidos</string>
+    <string name="geTipoInmueble">Tipo Inmueble</string>
+    <string name="geCostoMensual">Costo Mensual</string>
+    <string name="geFechaInicio">Fecha de inicio</string>
+    <string name="gePeriodo">Periodo</string>
+
+    <string name="geArrendatario">Datos del arrendatario</string>
+    <string name="geInmueble">Datos del inmueble</string>
+
 
 </resources>
