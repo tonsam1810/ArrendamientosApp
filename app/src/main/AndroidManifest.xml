@@ -16,6 +16,11 @@
         android:theme="@style/Theme.ArrendamientosApp"
         tools:targetApi="31">
         <activity
+            android:name=".GenerarContratoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleContratosActivity"
+
             android:name=".ContratoActivity"
             android:exported="false" />
         <activity

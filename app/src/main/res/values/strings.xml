@@ -1,5 +1,41 @@
 <resources>
     <string name="app_name">ArrendamientosApp</string>
+
+
+    //contratos
+    <string name="lbl_title_listado_contratos">Listado de Contratos</string>
+    <string name="lbl_buscar">Buscar</string>
+    <string name="lbl_estado">Estado</string>
+    <string name="button_buscar">Buscar</string>
+    <string name="numero_depa">N°</string>
+    <string name="numero_contrato">Numero de contrato</string>
+
+    <string name="dtNumeroContrato">Detalle de contrato</string>
+    <string name="dtFechaInicio">Fecha inicio</string>
+    <string name="dtFechaFinal">Fecha fin</string>
+    <string name="dtInmueble">Inmueble</string>
+    <string name="dtEstado">Estado</string>
+    <string name="dtInquilino">Inquilino</string>
+    <string name="dtMontoMensual">Monto Mensual</string>
+    <string name="dtClausula">Clausulas de contrato</string>
+
+    <string name="btn_cerrar">Cerrar</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="btn_cancelar">Cancelar</string>
+
+    <string name="geDNI">DNI</string>
+    <string name="geNombres">Nombres</string>
+    <string name="geApellidos">Apellidos</string>
+    <string name="geTipoInmueble">Tipo Inmueble</string>
+    <string name="geCostoMensual">Costo Mensual</string>
+    <string name="geFechaInicio">Fecha de inicio</string>
+    <string name="gePeriodo">Periodo</string>
+
+    <string name="geArrendatario">Datos del arrendatario</string>
+    <string name="geInmueble">Datos del inmueble</string>
+
+
+
     <string name="lbl_estado_pago_list">PENDIENTE</string>
     <string name="lbl_fecha_pago_list">15/03/2024</string>
     <string name="lbl_monto_pago_list">500.00</string>
@@ -16,4 +52,5 @@
     <string name="lblIdPago">100</string>
     <string name="titleIdPago">N° Recibo</string>
     <string name="titleDetallePago">DETALLE RECIBO DE PAGO</string>
+
 </resources>

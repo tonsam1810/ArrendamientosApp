@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenerarContratoActivity">
+
+    <TextView
+        android:id="@+id/lblTitleListadoContratos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_title_listado_contratos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:layout_marginTop="5sp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:id="@+id/primera_fila"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitleListadoContratos">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/numero_depa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.1"
+            android:gravity="end"
+            android:text="@string/numero_contrato" />
+
+        <TextView
+            android:id="@+id/Estado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.3"
+            android:layout_marginEnd="10sp"
+            android:gravity="end"
+            android:hint="@string/numero_contrato" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/geDatosArrendatario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/primera_fila"
+        android:text="Datos del Arrendatario"
+        />
+
+    <LinearLayout
+        android:id="@+id/segunda_fila"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/geDatosArrendatario">
+
+        <TextView
+            android:id="@+id/geDNIlegend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:text="@string/geDNI" />
+
+        <EditText
+            android:id="@+id/geDNI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:hint="@string/geDNI" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tercera_fila"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/segunda_fila">
+
+        <TextView
+            android:id="@+id/geNombresLegend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:text="@string/geNombres" />
+
+        <EditText
+            android:id="@+id/geNombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:hint="@string/geNombres" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/cuarta_fila"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tercera_fila">
+
+        <TextView
+            android:id="@+id/geApellidosLegend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:text="@string/geApellidos" />
+
+        <EditText
+            android:id="@+id/geApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:hint="@string/geApellidos" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/geDatosInmueble1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cuarta_fila"
+        android:text="@string/geInmueble"
+        />
+
+    <TextView
+        android:id="@+id/geInmueble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/geDatosInmueble1"
+        android:text="@string/dtInmueble"
+        />
+
+    <Spinner
+        android:id="@+id/geInmuebleSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/geInmueble"
+        />
+
+    <LinearLayout
+        android:id="@+id/quinta_fila"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/geInmuebleSpinner">
+
+        <TextView
+            android:id="@+id/geCostoMensualLegend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:text="@string/geCostoMensual" />
+
+        <EditText
+            android:id="@+id/geCostoMensual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:hint="@string/geCostoMensual" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/geDatosInmueble2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quinta_fila"
+        android:text="Datos del Inmueble:"
+        android:textStyle="bold"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/sexta_fila"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/geDatosInmueble2">
+
+        <TextView
+            android:id="@+id/geFechaInicioLegend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:text="@string/dtFechaInicio" />
+
+        <EditText
+            android:id="@+id/geFechaInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:hint="@string/dtFechaInicio" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setima_fila"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sexta_fila">
+
+        <TextView
+            android:id="@+id/gePeriodoLegend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:text="@string/gePeriodo" />
+
+        <EditText
+            android:id="@+id/gePeriodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:hint="@string/gePeriodo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setima_fila">
+
+        <Button
+            android:id="@+id/btnAddCarro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/naranja"
+            android:text="@string/btn_guardar" />
+
+
+        <Button
+            android:id="@+id/btnCancelCarro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/naranja"
+            android:text="@string/btn_cancelar" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
