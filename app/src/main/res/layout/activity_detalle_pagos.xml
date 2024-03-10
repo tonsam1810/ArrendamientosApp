@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetallePagosActivity">
+
+    <TextView
+        android:id="@+id/lbltitleRDetallePago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titleDetallePago"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/lyIdPago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbltitleRDetallePago"
+        android:layout_marginTop="50sp"
+        >
+
+        <TextView
+            android:text="@string/titleIdPago"
+            android:gravity="end"
+            android:layout_marginEnd="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/lblIdPago"
+            android:layout_marginStart="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/txtIdPagodt"
+            android:enabled="false"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lyIdContrato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyIdPago"
+        android:layout_marginTop="50sp"
+        >
+
+        <TextView
+            android:text="@string/titleIdContratoPago"
+            android:gravity="end"
+            android:layout_marginEnd="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/lblIdContratoPago"
+            android:layout_marginStart="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/txtIdContratodt"
+            android:enabled="false"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lyFechaPago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyIdContrato"
+        android:layout_marginTop="50sp"
+        >
+
+        <TextView
+            android:text="@string/titleFechaPago"
+            android:gravity="end"
+            android:layout_marginEnd="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/lblFechaPago"
+            android:layout_marginStart="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/txtFechaPagodt"
+            android:enabled="false"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lyMontoPago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyFechaPago"
+        android:layout_marginTop="50sp"
+        >
+
+        <TextView
+            android:text="@string/titleMontoPago"
+            android:gravity="end"
+            android:layout_marginEnd="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/lblMontoPago"
+            android:layout_marginStart="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/txtMontodt"
+            android:enabled="false"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lyEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyMontoPago"
+        android:layout_marginTop="50sp"
+        >
+
+        <TextView
+            android:text="@string/titleEstadoPago"
+            android:gravity="end"
+            android:layout_marginEnd="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            />
+
+        <Spinner
+            android:id="@+id/spnEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_weight="0.5"
+            android:enabled="false"
+            android:spinnerMode="dropdown"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyBotonesRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyEstado"
+        android:layout_marginTop="50sp"
+
+
+        >
+
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:visibility="invisible"
+
+            android:layout_marginEnd="20sp"
+
+            />
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            app:layout_constraintStart_toEndOf="@id/btnGuardar"
+            app:layout_constraintTop_toTopOf="@id/btnGuardar"
+            android:layout_marginStart="20sp"
+            android:visibility="invisible"
+
+
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnCambiarEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="25sp"
+        android:layout_marginStart="25sp"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

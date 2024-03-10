@@ -14,12 +14,12 @@
         android:title="Inmuebles"
         android:icon="@drawable/inmuebles" />
     <item
-        android:id="@+id/nav_usuarios"
-        android:title="Usuarios"
+        android:id="@+id/nav_contratos"
+        android:title="Contratos"
         android:icon="@drawable/configuracion" />
     <item
-        android:id="@+id/nav_menu"
-        android:title="Menú"
+        android:id="@+id/nav_pagos"
+        android:title="Pagos"
         android:icon="@drawable/menu" />
 
 </menu>

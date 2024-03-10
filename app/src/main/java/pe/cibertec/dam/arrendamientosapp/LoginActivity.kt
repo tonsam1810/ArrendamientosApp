@@ -35,7 +35,7 @@ class LoginActivity : AppCompatActivity() {
 
                     if (loginManager.login(username, password)) {
                         // Si el inicio de sesión es exitoso, navegar a la siguiente actividad
-                        startActivity(Intent(this, InicioActivity::class.java))
+                        startActivity(Intent(this,inicioActivity::class.java))
                         finish()
                     } else {
                         // Si el inicio de sesión falla, mostrar un mensaje de error al usuario
