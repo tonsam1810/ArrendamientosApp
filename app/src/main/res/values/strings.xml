@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">ArrendamientosApp</string>
+    <string name="lbl_estado_pago_list">PENDIENTE</string>
+    <string name="lbl_fecha_pago_list">15/03/2024</string>
+    <string name="lbl_monto_pago_list">500.00</string>
+    <string name="titleSoles">S/.</string>
+    <string name="lbl_id_pagos">100</string>
+    <string name="lblEstadoPago">PENDIENTE</string>
+    <string name="titleEstadoPago">Estado</string>
+    <string name="lblMontoPago">800.00</string>
+    <string name="titleMontoPago">Monto a pagar S/.</string>
+    <string name="lblFechaPago">15/03/2024</string>
+    <string name="titleFechaPago">Fecha de Pago</string>
+    <string name="lblIdContratoPago">001</string>
+    <string name="titleIdContratoPago">N° Contrato</string>
+    <string name="lblIdPago">100</string>
+    <string name="titleIdPago">N° Recibo</string>
+    <string name="titleDetallePago">DETALLE RECIBO DE PAGO</string>
 </resources>
